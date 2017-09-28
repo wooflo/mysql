@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/usr/local/mariadb/bin/mysqladmin -P3306 -uroot -pchinaU#2720 -h127.0.0.1 -r -i 2 ext |\
+/usr/local/mariadb/bin/mysqladmin -P3306 -uroot -pXXXXXX -h127.0.0.1 -r -i 2 ext |\
 awk -F"|" \
 "BEGIN{ count=0; }"\
 '{ if($2 ~ /Variable_name/ && ((++count)%20 == 1)){\
